@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags --><title>Trevor's Driving School | Professional Driving Lessons in South Africa</title>
+    <meta name="description" content="Trevor's Driving School offers professional K53 driving and learner's licence lessons in South Africa. Experienced instructors, high pass rates, and personalized training. Book your lesson today!">
+    <meta name="keywords" content="driving school, driving lessons, learners licence, K53, pass driving test, South Africa, Trevor's Driving School">
+    <meta name="author" content="Trevor's Driving School">
+    
+    <!-- Theme Color for Browsers --><meta name="theme-color" content="#0B5FFF">
+
+    <!-- Google Fonts: Poppins for headings, Open Sans for body --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon --><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+    <!-- Structured Data (JSON-LD) for Local Business --><script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Trevor's Driving School",
+      "description": "Professional K53 driving and learner's licence lessons in South Africa.",
+      "image": "https://placehold.co/600x400/0B5FFF/FFFFFF?text=Trevors+Driving+School",
+      "telephone": "+27827801854",
+      "email": "trevorschool89@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Safe Drive Avenue",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "url": "https://www.trevorsdrivingschool.co.za",
+      "priceRange": "R200 - R3000",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ========================================
+        CSS Variables & Root Styles
+        ========================================
+        */
+        :root {
+            /* Color Palette */
+            --blue: #0B5FFF;
+            --red: #E53935;
+            --white: #FFFFFF;
+            --black: #000000;
+            --grey-light-1: #F8F9FA;
+            --grey-light-2: #E9ECEF;
+            --grey-dark-1: #495057;
+            --grey-dark-2: #343A40;
+            --grey-dark-3: #212529;
+
+            /* Typography */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+
+            /* UI Properties */
+            --radius: 8px;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --transition-speed: 0.3s;
+            --max-width: 1200px;
+
+            /* Light Theme Defaults */
+            --bg-primary: var(--white);
+            --bg-secondary: var(--grey-light-1);
+            --text-primary: var(--grey-dark-2);
+            --text-secondary: var(--grey-dark-1);
+            --border-color: var(--grey-light-2);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-theme {
+            --bg-primary: var(--grey-dark-3);
+            --bg-secondary: var(--grey-dark-2);
+            --text-primary: var(--grey-light-1);
+            --text-secondary: var(--grey-light-2);
+            --border-color: var(--grey-dark-1);
+            --shadow-color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* ========================================
+        Global Resets & Base Styles
+        ========================================
+        */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.5rem; }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+        
+        a:hover {
+            color: var(--red);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1.5rem;
+        }
+        
+        /* ========================================
+        Scroll Progress Bar
+        ========================================
+        */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--blue), var(--red));
+            width: 0%;
+            z-index: 1001;
+            transition: width 0.1s linear;
+        }
+
+        /* ========================================
+        Utility Classes
+        ========================================
+        */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed);
+            border: none;
+            font-family: var(--font-secondary);
+        }
+
+        .btn-primary {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #0047cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(11, 95, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--blue);
+            border: 2px solid var(--blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--blue);
+            margin: 0.5rem auto 0;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========================================
+        Header & Navigation
+        ========================================
+        */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dark-theme .header {
+            background-color: rgba(33, 37, 41, 0.8);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        
+        .logo-text {
+             font-family: var(--font-primary);
+             font-weight: 700;
+             font-size: 1.5rem;
+             color: var(--text-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 0.5rem;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--blue);
+            transition: width var(--transition-speed);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        
+        .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--text-primary);
+            transition: all var(--transition-speed);
+        }
+        
+        /* ========================================
+        Theme Switcher
+        ========================================
+        */
+        .theme-switcher {
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        .theme-switcher i {
+            font-size: 1rem;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        .theme-switcher .fa-sun { display: block; }
+        .theme-switcher .fa-moon { display: none; }
+        
+        .dark-theme .theme-switcher .fa-sun { display: none; }
+        .dark-theme .theme-switcher .fa-moon { display: block; }
+
+        /* ========================================
+        Hero Section
+        ========================================
+        */
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding-top: 70px;
+            overflow: hidden;
+            background-color: var(--grey-dark-3); /* Fallback */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--white); /* Ensure text is readable on image */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)); /* Dark overlay for text readability */
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+            border-radius: var(--radius);
+        }
+        
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 3.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--grey-light-1);
+            margin-bottom: 2rem;
+        }
+        
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-line {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--grey-light-1);
+            opacity: 0.8;
+        }
+        
+        .trust-line i {
+            color: var(--blue);
+            margin: 0 5px;
+        }
+        
+        /*
+        ========================================
+        Services Section
+        ========================================
+        */
+        .services {
+            background-color: var(--bg-secondary);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--bg-primary);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px var(--shadow-color);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--blue);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+        }
+
+        /*
+        ========================================
+        About Us Section
+        ========================================
+        */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        
+        .about-process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .step-card {
+            padding: 2rem;
+        }
+        
+        .step-card .number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 1rem;
+            line-height: 1;
+            display: inline-block;
+            border-bottom: 3px solid var(--red);
+            padding-bottom: 0.5rem;
+        }
+
+        .step-card h3 {
+            margin-top: 1rem;
+        }
+
+        .about-mission {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /*
+        ========================================
+        Testimonials Section
+        ========================================
+        */
+        .testimonials {
+            background-color: var(--bg-primary); 
+        }
+        
+        .testimonial-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 1rem;
+        }
+        
+        .testimonial-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 2rem;
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .testimonial-slide p {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+        }
+        
+        .star-rating {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color var(--transition-speed);
+        }
+        
+        .carousel-btn:hover {
+            background-color: var(--red);
+        }
+        
+        #prevBtn { left: -10px; }
+        #nextBtn { right: -10px; }
+        
+        /*
+        ========================================
+        Pricing Section
+        ========================================
+        */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .price-card {
+            background-color: var(--bg-primary);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            border: 2px solid var(--border-color);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+        }
+        
+        .price-card.popular {
+            transform: scale(1.05);
+            border-color: var(--blue);
+            box-shadow: 0 8px 30px rgba(11, 95, 255, 0.2);
+        }
+        
+        .price-card h3 {
+            font-size: 1.5rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin: 1rem 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+        }
+        
+        .price-card ul {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .price-card li {
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+        }
+        
+        .price-card li i {
+            color: var(--blue);
+            margin-right: 0.5rem;
+        }
+        
+        /*
+        ========================================
+        Contact Section
+        ========================================
+        */
+        .contact {
+            background-color: var(--bg-secondary);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info i {
+            color: var(--blue);
+            margin-right: 1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            position: relative;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(11, 95, 255, 0.2);
+        }
+
+        .form-control.is-invalid {
+            border-color: var(--red);
+        }
+        
+        .error-message {
+            color: var(--red);
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        #form-message {
+            padding: 1rem;
+            border-radius: var(--radius);
+            margin-top: 1rem;
+            text-align: center;
+            display: none;
+        }
+
+        #form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        #form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        /*
+        ========================================
+        Footer
+        ========================================
+        */
+        .footer {
+            background-color: var(--grey-dark-3);
+            color: var(--grey-light-2);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer .logo-text {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--grey-light-2);
+        }
+        
+        .footer-links a:hover {
+            color: var(--blue);
+        }
+
+        .social-icons {
+            margin-bottom: 1rem;
+        }
+        
+        .social-icons a {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color var(--transition-speed), transform var(--transition-speed);
+        }
+        
+        .social-icons a:hover {
+            color: var(--blue);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--grey-dark-1);
+        }
+        
+        /*
+        ========================================
+        Back to Top Button
+        ========================================
+        */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            opacity: 0;
+            transition: opacity var(--transition-speed), transform var(--transition-speed);
+            z-index: 999;
+        }
+
+        #back-to-top.show {
+            display: block;
+            opacity: 1;
+        }
+        
+        #back-to-top:hover {
+            background-color: var(--red);
+            transform: scale(1.1);
+        }
+
+        /* ========================================
+        Responsive Media Queries
+        ========================================
+        */
+        @media (max-width: 900px) {
+            h1 { font-size: 2.2rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px; /* Below header */
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--bg-primary);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transition: left var(--transition-speed);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-link {
+                font-size: 1.5rem;
+            }
+
+            .hamburger {
+                display: block;
+            }
+            
+            /* Hamburger animation to 'X' */
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .price-card.popular {
+                transform: scale(1);
+            }
+
+            .carousel-btn {
+                top: auto;
+                bottom: 0;
+                transform: translateY(0);
+            }
+            #prevBtn { left: 35%; }
+            #nextBtn { right: 35%; }
+            .testimonial-carousel { padding-bottom: 50px; }
+            
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          html {
+            scroll-behavior: auto;
+          }
+          *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar --><div id="scroll-progress-bar"></div>
+
+    <!-- Header Section --><header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <!-- The logo image is now embedded directly into the HTML to ensure it always loads -->
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAEgASgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z" alt="Trevor's Driving School Logo">
+                <span class="logo-text">Trevor's</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="theme-switcher" id="theme-switcher" role="button" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <!-- DEVELOPER NOTE: To change the hero image, replace the URL below with the direct link to your image. -->
+        <section class="hero" id="home" style="background-image: url('https://placehold.co/1920x1080/333/fff?text=PASTE+YOUR+IMAGE+URL+HERE');">
+            <div class="hero-content container fade-in">
+                <h1>Drive Confidently. Pass with Trevor's.</h1>
+                <p>Professional instructors, personalised lessons, high pass rates — we prepare you for South African learner’s and driver’s licence tests.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get a Quote / Book a Lesson</a>
+                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+                </div>
+                <div class="trust-line">
+                    <span><i class="fas fa-user-shield"></i>Experienced instructors</span> &bull;
+                    <span><i class="fas fa-chart-line"></i>High pass rates</span> &bull;
+                    <span><i class="fas fa-id-card"></i>SA licence tests covered</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section --><section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <!-- Service Card 1 --><div class="service-card fade-in">
+                        <i class="fas fa-book-open icon"></i>
+                        <h3>Learner’s Licence Prep</h3>
+                        <p>Master the K53 theory with our comprehensive preparation classes and mock tests.</p>
+                    </div>
+                    <!-- Service Card 2 --><div class="service-card fade-in">
+                        <i class="fas fa-car icon"></i>
+                        <h3>Practical Driving Lessons</h3>
+                        <p>Available for both manual and automatic vehicles, tailored to your learning pace.</p>
+                    </div>
+                    <!-- Service Card 3 --><div class="service-card fade-in">
+                        <i class="fas fa-rocket icon"></i>
+                        <h3>Intensive Crash Courses</h3>
+                        <p>Need to get your licence fast? Our intensive courses are designed for quick results.</p>
+                    </div>
+                    <!-- Service Card 4 --><div class="service-card fade-in">
+                        <i class="fas fa-clipboard-check icon"></i>
+                        <h3>Mock Tests & Assessment</h3>
+                        <p>Simulate the official test environment to build confidence and identify areas for improvement.</p>
+                    </div>
+                     <!-- Service Card 5 --><div class="service-card fade-in">
+                        <i class="fas fa-user-plus icon"></i>
+                        <h3>Refresher Lessons</h3>
+                        <p>For licensed drivers wanting to brush up on their skills or gain confidence on the road.</p>
+                    </div>
+                     <!-- Service Card 6 --><div class="service-card fade-in">
+                        <i class="fas fa-road-circle-check icon"></i>
+                        <h3>Test Day Assistance</h3>
+                        <p>We can assist with booking your test and provide a vehicle for the official test day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section --><section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">Your Journey to a Driver's Licence</h2>
+                <div class="about-content">
+                    <div class="about-process">
+                        <!-- Step 1 --><div class="step-card fade-in">
+                            <div class="number">1</div>
+                            <h3>Assess Your Skill</h3>
+                            <p>We start with a friendly assessment to understand your current driving ability and confidence level, creating a baseline for your training.</p>
+                        </div>
+                        <!-- Step 2 --><div class="step-card fade-in">
+                            <div class="number">2</div>
+                            <h3>Personalised Training</h3>
+                            <p>Based on your assessment, we create a personalised lesson plan focusing on your specific needs, from mastering the basics to advanced K53 manoeuvres.</p>
+                        </div>
+                        <!-- Step 3 --><div class="step-card fade-in">
+                            <div class="number">3</div>
+                            <h3>Pass Your Test</h3>
+                            <p>With mock tests and expert guidance, we'll build your confidence until you're fully prepared and ready to ace your official driving test.</p>
+                        </div>
+                    </div>
+                    <div class="about-mission fade-in">
+                        <h3>Our Mission</h3>
+                        <p>At Trevor's Driving School, our mission is to empower new drivers with the skills, knowledge, and confidence to be safe and responsible road users for life. Our government-accredited instructors are patient, professional, and dedicated to your success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section --><section class="testimonials section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Students Say</h2>
+                <div class="testimonial-carousel fade-in">
+                    <div class="testimonial-slides">
+                        <!-- Slide 1 --><div class="testimonial-slide">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"Trevor is an amazing instructor! Patient, clear, and made me feel so comfortable behind the wheel. I passed my test on the first try thanks to him."</p>
+                            <div class="testimonial-author">- Lerato M.</div>
+                        </div>
+                        <!-- Slide 2 --><div class="testimonial-slide">
+                           <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"The learner's classes were a game-changer. I went from being totally confused by the K53 book to understanding everything. Highly recommend!"</p>
+                            <div class="testimonial-author">- Jason P.</div>
+                        </div>
+                        <!-- Slide 3 --><div class="testimonial-slide">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>"I was a very nervous driver, but the instructors were so patient. The mock test was incredibly helpful to calm my nerves before the real thing."</p>
+                            <div class="testimonial-author">- Priya K.</div>
+                        </div>
+                    </div>
+                    <button id="prevBtn" class="carousel-btn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn" class="carousel-btn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section --><section class="pricing section" id="pricing">
+            <div class="container">
+                <h2 class="section-title">Our Packages</h2>
+                <div class="pricing-grid">
+                    <!-- Price Card 1 --><div class="price-card fade-in">
+                        <h3>Starter Pack</h3>
+                        <div class="price">R1000 <span>/ 5 lessons</span></div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i>5 x 1-hour Practical Lessons</li>
+                            <li><i class="fas fa-check-circle"></i>K53 Basics Introduction</li>
+                            <li><i class="fas fa-check-circle"></i>Ideal for Beginners</li>
+                            <li><i class="fas fa-times-circle"></i>Mock Test Not Included</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Book Now</a>
+                    </div>
+                    <!-- Price Card 2 (Popular) --><div class="price-card popular fade-in">
+                        <h3>Intensive Pack</h3>
+                        <div class="price">R1900 <span>/ 10 lessons</span></div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i>10 x 1-hour Practical Lessons</li>
+                            <li><i class="fas fa-check-circle"></i>Full K53 Manoeuvres</li>
+                            <li><i class="fas fa-check-circle"></i>Includes 1 Mock Test</li>
+                            <li><i class="fas fa-check-circle"></i>Test Route Familiarisation</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Book Now</a>
+                    </div>
+                    <!-- Price Card 3 --><div class="price-card fade-in">
+                        <h3>Full Package</h3>
+                        <div class="price">R3500 <span>/ 20 lessons</span></div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i>20 x 1-hour Practical Lessons</li>
+                            <li><i class="fas fa-check-circle"></i>Learner's Test Prep Included</li>
+                            <li><i class="fas fa-check-circle"></i>Test Booking Assistance</li>
+                            <li><i class="fas fa-check-circle"></i>Vehicle Hire for Test Day</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info fade-in">
+                        <h3>Start Your Driving Journey Today!</h3>
+                        <p>Have questions or ready to book your first lesson? Send us a message or give us a call. We're here to help you get on the road safely and confidently.</p>
+                        <p><i class="fas fa-phone"></i><a href="tel:+27827801854">082 780 1854</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto:trevorschool89@gmail.com">trevorschool89@gmail.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i><a href="#" target="_blank" rel="noopener noreferrer">Serving Johannesburg & Surrounding Areas</a></p>
+                    </div>
+                    <form id="contact-form" class="contact-form fade-in" action="#" method="POST" novalidate>
+                        <!-- NOTE FOR DEVELOPER: Replace the action="#" with your server endpoint --><div class="form-group">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                            <div class="error-message">Please enter your name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                            <div class="error-message">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="sr-only">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone (e.g., 082 123 4567)" required pattern="^0[0-9]{9}$">
+                            <div class="error-message">Please enter a valid 10-digit SA phone number.</div>
+                        </div>
+                        <div class="form-group">
+                             <label for="service" class="sr-only">Service of Interest</label>
+                             <select id="service" name="service" class="form-control" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Learners Prep">Learner’s Licence Prep</option>
+                                <option value="Practical Lessons">Practical Driving Lessons</option>
+                                <option value="Intensive Course">Intensive Crash Course</option>
+                                <option value="Other">Other</option>
+                             </select>
+                             <div class="error-message">Please select a service.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <div class="error-message">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="footer">
+        <div class="container">
+            <div class="logo-text">Trevor's Driving School</div>
+             <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+            <div class="social-icons">
+                <!-- Replace # with actual social media links --><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="current-year"></span> Trevor's Driving School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button --><button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    /**
+     * ========================================
+     * Trevor's Driving School - Main JavaScript
+     * ========================================
+     * Encapsulated in a DOMContentLoaded event listener to ensure
+     * the DOM is fully loaded before scripts run.
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // --- Utility function to select elements ---
+        const $ = selector => document.querySelector(selector);
+        const $$ = selector => document.querySelectorAll(selector);
+
+        /**
+         * ----------------------------------------
+         * 1. Header Scroll Effect
+         * ----------------------------------------
+         */
+        const header = $('#header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        /**
+         * ----------------------------------------
+         * 2. Mobile Navigation Toggle
+         * ----------------------------------------
+         */
+        const hamburger = $('#hamburger');
+        const navLinks = $('#nav-links');
+
+        const toggleNav = () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        };
+
+        hamburger.addEventListener('click', toggleNav);
+
+        $$('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleNav();
+                }
+            });
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                toggleNav();
+            }
+        });
+
+        /**
+         * ----------------------------------------
+         * 3. Theme Switcher (Light/Dark Mode)
+         * ----------------------------------------
+         */
+        const themeSwitcher = $('#theme-switcher');
+        const root = document.documentElement;
+
+        const setTheme = (theme) => {
+            localStorage.setItem('theme', theme);
+            root.className = theme === 'dark' ? 'dark-theme' : 'light-theme';
+        };
+
+        themeSwitcher.addEventListener('click', () => {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        setTheme(localStorage.getItem('theme') || 'light');
+
+        /**
+         * ----------------------------------------
+         * 4. Intersection Observer for Scroll Animations
+         * ----------------------------------------
+         */
+        const fadeElements = $$('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+        
+        /**
+         * ----------------------------------------
+         * 5. Testimonials Carousel
+         * ----------------------------------------
+         */
+        const slides = $('.testimonial-slides');
+        const slideItems = $$('.testimonial-slide');
+        const prevBtn = $('#prevBtn');
+        const nextBtn = $('#nextBtn');
+        let currentIndex = 0;
+        const totalSlides = slideItems.length;
+
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        /**
+         * ----------------------------------------
+         * 6. Contact Form Validation
+         * ----------------------------------------
+         */
+        const contactForm = $('#contact-form');
+        const formMessage = $('#form-message');
+
+        const validateField = (field) => {
+            const errorMsg = field.nextElementSibling;
+            let isValid = false;
+
+            if (field.type === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                isValid = field.value.trim() !== '' && emailRegex.test(field.value);
+            } else if (field.type === 'tel') {
+                isValid = field.checkValidity(); // Uses the pattern attribute
+            } else {
+                isValid = field.value.trim() !== '';
+            }
+
+            field.classList.toggle('is-invalid', !isValid);
+            errorMsg.style.display = isValid ? 'none' : 'block';
+            return isValid;
+        };
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isFormValid = true;
+            const fieldsToValidate = $$('#contact-form [required]');
+            
+            fieldsToValidate.forEach(field => {
+                if (!validateField(field)) {
+                    isFormValid = false;
+                }
+            });
+            
+            if (isFormValid) {
+                console.log('Form is valid. Submitting...');
+                formMessage.textContent = 'Thank you! Your message has been sent successfully.';
+                formMessage.className = 'success';
+                formMessage.style.display = 'block';
+                contactForm.reset();
+                setTimeout(() => formMessage.style.display = 'none', 5000);
+            } else {
+                formMessage.textContent = 'Please correct the errors before submitting.';
+                formMessage.className = 'error';
+                formMessage.style.display = 'block';
+            }
+        });
+        
+        $$('#contact-form [required]').forEach(field => {
+            field.addEventListener('input', () => validateField(field));
+        });
+
+        /**
+         * ----------------------------------------
+         * 7. Back to Top Button
+         * ----------------------------------------
+         */
+        const backToTopBtn = $('#back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        /**
+         * ----------------------------------------
+         * 8. Scroll Progress Indicator
+         * ----------------------------------------
+         */
+        const progressBar = $('#scroll-progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollProgress = (scrollTop / scrollHeight) * 100;
+            progressBar.style.width = `${scrollProgress}%`;
+        });
+        
+        /**
+         * ----------------------------------------
+         * 9. Update Footer Year
+         * ----------------------------------------
+         */
+        $('#current-year').textContent = new Date().getFullYear();
+    });
+</script>
+
+</body>
+</html>
+
